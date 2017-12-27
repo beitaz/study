@@ -16,6 +16,10 @@
     "react-native"
   ],
   "rules": {
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "quotes": [
+      "error",
+      "single"
+    ]
   }
 }
