@@ -129,18 +129,8 @@ $ create-react-app .
 ## 开发
 ---
 
-JS 文件报错 `Parsing error: 'import' and 'export' may appear only with 'sourceType: module'` 需要修改 `.eslintrc` 配置:
-```shell
-{
-  "extends": "loopback",
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  }
-}
-```
+修改 ESLint 配置文件 `.eslintrc` 消除错误.
+
 ...
 
 
