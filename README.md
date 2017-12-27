@@ -152,6 +152,34 @@ $ create-react-app .
 构建并启动服务器:
 ```shell
 $ npm run build
-$ npm start
 ```
 
+将文件 `PROJECT_ROOT/server/boot/root.js`
+```javascript
+...
+  router.get('/', server.loopback.status());
+...
+```
+修改为:
+```javascript
+...
+  router.get('/');
+...
+```
+
+将文件 `PROJECT_ROOT/server/middleware.json`
+```json
+...
+  "files": {},
+...
+```
+修改为:
+```json
+...
+  "files": {
+    "loopback#static": {
+      "params": "$!../client"
+    }
+  },
+...
+```
