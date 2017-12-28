@@ -36,7 +36,8 @@ MongoDB 基本命令:
 $ mongo
 > show dbs
 > use db_name
-> show collections
+> db.dropDatabase();
+> show collections;
 > db.article.find()
 > exit
 ```
